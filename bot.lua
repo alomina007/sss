@@ -5,7 +5,7 @@ URL = require('socket.url')
 JSON = require('dkjson')
 HTTPS = require('ssl.https')
 ----config----
-local bot_api_key = "186023196:AAEbq9UUvCA7xNKL6cQo3C9dCCQbIqJw9t8"
+local bot_api_key = "249609663:AAGaKSxq1oetwmZRQi5wJRPFWdRu2wWFBPQ"
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
 local start = [[سلام خوش آمدید
@@ -224,7 +224,7 @@ function msg_processor(msg)
 	start = start..'\n[Creator:]\n @XxattackerxX'
 	if msg.new_chat_participant or msg.new_chat_title or msg.new_chat_photo or msg.left_chat_participant then return end
 	if msg.audio or msg.document or msg.video or msg.voice then return end -- Admins only !
-	if msg.date < os.time() - 1 then -- Ignore old msgs
+	if msg.date < os.time() - 0 then -- Ignore old msgs
 		return
     end
 
