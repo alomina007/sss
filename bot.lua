@@ -8,43 +8,50 @@ HTTPS = require('ssl.https')
 local bot_api_key = "239777728:AAEPxMXiogv-4qzZVkDLvxGV9hgi3s9gpfQ"
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
-local start = [[HI
+local start = [[سلام خوش آمدید
+
 /bold text 
-return bold text
+بازگشت متن به صورت درشت شده
 
 /italic text
-return italic text
+بازگشت متن به صورت کج شده
 
 /link url text
-markdown link
+هایپرکردن یک متن
 
 /code text
-return code text
+بازگشت متن به صورت کدنویسی شده
+________________________________
 
+:دستورات مخصوص کانال
 
--channel
-add bot to a channel then use this commands
+ابتدا ربات را درکانال اددکنید وسپس دستورات را انجام دهید
 
 /boldch @channelusername text
-send bold text to a channel
+ارسال کردن یک متن به صورت درشت شده درکانال
 
 /italicch @channelusername text
-send italic text to a channel
+ارسال کردن یک متن به صورت کج شده درکانال
 
 /linkch @channelusername url text
-send markdown link to a channel
+ارسال کردن یک متن به صورت هایپرلینک درکانال
 
 /codech @channelusername text
-send code text to a channel
+ارسال یک متن به صورت کدنویسی شده درکانال
+________________________________
+
+دستورات مخصوص عکس واستیکر:
+
+تبدیل استیکر به عکس
+
+فقط کافی است استیکر موردنظرخودراربفرستید
+
+تبدیل عکس به استیکر
+
+فقط کافی است استیکر موردنظرخودراربفرستید 
 
 
--ohther
-
-sticker to photo 
-just send a sticker
-
-photo to sticker
-just send a photo
+باتشکر
 ]]
 -------
 
