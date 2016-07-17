@@ -224,7 +224,7 @@ function msg_processor(msg)
 	start = start..'\n[Creator:]\n @XxattackerxX'
 	if msg.new_chat_participant or msg.new_chat_title or msg.new_chat_photo or msg.left_chat_participant then return end
 	if msg.audio or msg.document or msg.video or msg.voice then return end -- Admins only !
-	if msg.date < os.time() - 1 then -- Ignore old msgs
+	if msg.date < os.time() - 5 then -- Ignore old msgs
 		return
     end
 
