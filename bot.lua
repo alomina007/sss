@@ -301,17 +301,3 @@ elseif msg.text:match("^/[sS]tart") or msg.text:match("^/[Hh]elp") then
 return end
 
 end
-bot_run() -- Run main function
-while is_running do -- Start a loop witch receive messages.
-	local response = getUpdates(last_update+1) -- Get the latest updates using getUpdates method
-	if response then
-		for i,v in ipairs(response.result) do
-			last_update = v.update_id
-			msg_processor(v.message)
-		end
-	else
-		print("")
-	end
-
-end
-print("Bot halted")
