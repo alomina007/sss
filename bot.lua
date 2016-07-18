@@ -301,3 +301,5 @@ elseif msg.text:match("^/[sS]tart") or msg.text:match("^/[Hh]elp") then
 return end
 
 end
+bot_run() -- Run main function
+while is_running do -- Start a loop witch receive message
