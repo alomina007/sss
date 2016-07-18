@@ -10,7 +10,10 @@ local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
 local start = [[سلام خوش آمدید
 
-/bold text 
+markup = types.InlineKeyboardMarkup()
+    markup.add(types.InlineKeyboardButton('developer', url = 'https://telegram.me/XxattackerxX'))
+
+/bold   text                    
 بازگشت متن به صورت درشت شده
 
 /italic text
