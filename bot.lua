@@ -224,7 +224,7 @@ function msg_processor(msg)
 	start = start..'\n[Creator:]\n @XxattackerxX'
 	if msg.new_chat_participant or msg.new_chat_title or msg.new_chat_photo or msg.left_chat_participant then return end
 	if msg.audio or msg.document or msg.video or msg.voice then return end -- Admins only !
-	if msg.date < os.time() - 1 then -- Ignore old msgs
+	if msg.date < os.time() - 7 then -- Ignore old msgs
 		return
     end
 
@@ -303,7 +303,7 @@ return end
 end
 bot_run() -- Run main function
 while is_running do -- Start a loop witch receive messages.
-	local response = getUpdates(last_update+1) -- Get the latest updates using getUpdates method
+	local response = getUpdates(last_update+5) -- Get the latest updates using getUpdates method
 	if response then
 		for i,v in ipairs(response.result) do
 			last_update = v.update_id
