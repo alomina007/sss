@@ -303,7 +303,7 @@ return end
 end
 bot_run() -- Run main function
 while is_running do -- Start a loop witch receive messages.
-	local response = getUpdates(last_update+5) -- Get the latest updates using getUpdates method
+	local response = getUpdates(last_update+2) -- Get the latest updates using getUpdates method
 	if response then
 		for i,v in ipairs(response.result) do
 			last_update = v.update_id
